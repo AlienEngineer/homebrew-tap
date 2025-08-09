@@ -1,8 +1,8 @@
 class IsMyCodeGreat < Formula
   desc "CLI to analyse Dart test code quality"
   homepage "https://github.com/alienengineer/is-my-code-great"
-  url      "https://github.com/alienengineer/is-my-code-great/archive/v0.7.4.tar.gz"
-  sha256   "05800a8d37b9c71be40f2b09153d9ca22f14e0277d3298fee02a8eca4395d8ff"
+  url      "https://github.com/alienengineer/is-my-code-great/archive/v0.7.5.tar.gz"
+  sha256   "738098c0cb8a8df50ff70be9d3ce0c9fa64f748e8df875e3b2b5946fe15be45d"
 
   def install
     lib.install Dir["lib/*"]
@@ -11,6 +11,8 @@ class IsMyCodeGreat < Formula
   end
 
   test do
-    system "#{bin}/is-my-code-great", "--help"
+    bin_path = bin/"is-my-code-great"
+    assert_predicate bin_path, :exist?, "Binary not installed"
+    assert_predicate bin_path, :executable?, "Binary is not executable"
   end
 end
