@@ -7,7 +7,7 @@ class IsMyCodeGreat < Formula
   def install
     lib.install Dir["lib/*"]
     bin.install "bin/is-my-code-great"
-    man1.install "share/man/is-my-code-great.1"
+    man1.install Dir["share/man/man1/*"]
   end
 
   test do
