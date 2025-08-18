@@ -1,8 +1,8 @@
 class IsMyCodeGreat < Formula
   desc "CLI to analyse Dart test code quality"
   homepage "https://github.com/alienengineer/is-my-code-great"
-  url      "https://github.com/alienengineer/is-my-code-great/archive/v0.10.7.tar.gz"
-  sha256   "a760b663bd75d063e3ed4a19c290418d0a758987e3d9e4b618a7d4eac1aea95c"
+  url      "https://github.com/alienengineer/is-my-code-great/archive/v0.tar.gz"
+  sha256   "07c3f75f77f658504319868631db937ca77fbe44a7628d8d52ec7b13dee264ea"
 
   def install
     lib.install Dir["lib/*"]
